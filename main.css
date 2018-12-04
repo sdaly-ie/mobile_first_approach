@@ -1,23 +1,16 @@
-.box {
-    width: 200px;
-    height: 200px;
-    border: 1px solid #000;
-    display: inline-block;
+
+.column {
+    background-color: #e84610;
+    border-radius: 3px;
+    height: 100px;
+    float: left;
+    width: 100%;
+    margin: 10px 0;
 }
 
-/* Media Query */
-
-@media (max-width: 767px) 
-                            {
-                                .mobile {background-color: #0997d3;}
-                            }
-                            
-@media (min-width: 768px) and (max-width: 991px)
-                            {
-                                .tablet {background-color: #bada55;}
-                            }
-                            
-@media (min-width: 992px) and (max-width: 1800) 
-                            {
-                                .desktop {background-color: #FF0000;}
-                            }
+@media (min-width: 992px) {
+    .column {
+        margin: 10px;
+        width: 30%;
+    }
+}
